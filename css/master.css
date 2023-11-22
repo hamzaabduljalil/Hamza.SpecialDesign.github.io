@@ -1,0 +1,186 @@
+:root{
+    --main-color:#FF9800;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.setting-box{
+    position: fixed;
+    z-index: 100;
+    left: -200px;
+    top: 0;
+    min-height: 100vh;
+    background: white;
+    width: 200px;
+}
+.setting-box .font-gear{
+position: absolute;
+    right: -30px;
+    background: white;
+    top: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+.setting-box .fa-gear {
+    padding: 8px 0;
+    width: 30px;
+
+}
+.setting-box.open {
+    left: 0;
+}
+.setting-box .option-box{
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    margin: 10px;
+}
+.setting-box .option-box h4{
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+
+}
+.setting-box .option-box .colors-list{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 0;
+}
+.setting-box .option-box .colors-list li{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #eeeeee;
+    background-color: #333333;
+    cursor: pointer;
+
+}
+.setting-box .option-box .colors-list li.active{
+    border-color: #fff;
+}
+.setting-box .option-box .colors-list li:first-child{
+    background-color: #FF9800;
+}
+.setting-box .option-box .colors-list li:nth-child(2){
+    background-color: #E91E63;
+}
+.setting-box .option-box .colors-list li:nth-child(3){
+  background-color: #FF9800;
+    background-color: #009688;
+}
+.setting-box .option-box .colors-list li:nth-child(4){
+    background-color: #03A9F4;
+
+}
+.setting-box .option-box .colors-list li:nth-child(5){
+    background-color: #4CAF50;
+
+}
+
+.setting-box .option-box{
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    background-color: #eee;
+}
+.setting-box .option-box h5{
+  color: #666;
+ margin:0;
+}
+.setting-box .option-box span{
+    width: 50px;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 4px 10px ;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+  border-radius: 4px;
+  opacity: .5;
+  cursor: pointer;
+}
+.setting-box .option-box span.active{
+    opacity: 1;
+}
+/* start landing page  */
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../imges/01.jpg);
+    background-size: cover;
+    position: relative;
+}
+.overplay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.header{
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex ;    
+    justify-content: space-between;
+    padding: 10px;
+}
+ .logo{
+    font-weight: bold;
+    padding: 15px;
+    width: 300px;
+}
+.landing-page .links{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 80px;
+    font-size: 15px; 
+}
+.landing-page .links li{
+    display: inline-block;
+    margin-left: 10px;
+} 
+.landing-page .links li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.landing-page .links li a:hover{
+    color:  var(--main-color) ;
+}
+
+.indroduction{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  text-align: center; 
+
+}
+.indroduction h1{
+font-size: 32px;
+margin: 0 0 12px;
+}
+.indroduction h1 span{
+    color:var(--main-color);
+}
+.indroduction p{
+    line-height: 1.7;
+    margin: 0;
+
+}
